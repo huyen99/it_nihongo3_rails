@@ -10,4 +10,5 @@ class User < ApplicationRecord
   
   has_one_attached :avatar
 
+  has_many :book_review, -> { order "created_at DESC"}
 end
